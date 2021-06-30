@@ -1,14 +1,14 @@
 package design.patterns.structural.decorator;
 
+import lombok.Data;
+
+@Data
 public class Iphone implements Phone{
 
     @Override
-    public String getDescription() {
-        return "Iphone smartphone made by Apple";
+    public void getDescription() {
+
+        System.out.println("Iphone smartphone made by Apple");
     }
 
-    @Override
-    public double getCost() {
-        return 756.68;
-    }
 }

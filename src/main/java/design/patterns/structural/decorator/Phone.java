@@ -2,10 +2,7 @@ package design.patterns.structural.decorator;
 
 public interface Phone {
 
+    void getDescription();
 
-    default String getDescription() {
-        return null;
-    }
-   double getCost();
 }
 

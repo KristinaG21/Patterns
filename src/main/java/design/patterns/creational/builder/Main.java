@@ -5,13 +5,14 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
 
-            Delivery delivery = Delivery.builder()
-                    .productName("IPhone 125G")
-                    .type(TypeOfDelivery.EXPRESS)
-                    .price(BigDecimal.valueOf(768.99))
-                    .dateOfDelivery("12.08.2021")
-                    .build();
+        Delivery.Builder builder = new Delivery.Builder();
+        Delivery delivery = builder
+                .setName("IPhone 125G")
+                .setType(TypeOfDelivery.EXPRESS)
+                .setPrice(BigDecimal.valueOf(768.99))
+                .setDelivery("12.08.2021")
+                .build();
 
-            System.out.println(delivery);
+        System.out.println(delivery);
     }
-    }
+}

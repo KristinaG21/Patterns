@@ -2,12 +2,9 @@ package design.patterns.structural.decorator;
 
 public class Xiaomi implements Phone{
     @Override
-    public String getDescription() {
-        return "Xiaomi smartphone.";
+    public void getDescription() {
+
+        System.out.println("Xiaomi smartphone.");
     }
 
-    @Override
-    public double getCost() {
-        return 345.00;
-    }
 }
